@@ -20,4 +20,6 @@ if (reply.Status == IPStatus.Success)
 {
     Console.WriteLine("Response: {0}", reply.Status.ToString());
     Console.WriteLine("Roundtrip: {0}", reply.RoundtripTime);
+    Console.WriteLine("Time to live: {0}", reply.Options.Ttl);
+    Console.WriteLine("Buffer size: {0}", reply.Buffer.Length);
 }
