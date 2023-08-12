@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System.Net.NetworkInformation;
+
+Ping pingSender = new();
+
+Console.WriteLine(pingSender);
