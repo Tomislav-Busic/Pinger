@@ -11,4 +11,6 @@ PingOptions optionsPing = new()
 
 string data = "Learn to code";
 byte[] buffer = Encoding.ASCII.GetBytes(data);
-
+int timeout = 120;
+string address = "4.2.2.2";
+PingReply reply = pingSender.Send(address, timeout, buffer, optionsPing);
