@@ -18,5 +18,6 @@ PingReply reply = pingSender.Send(address, timeout, buffer, optionsPing);
 
 if (reply.Status == IPStatus.Success)
 {
-    Console.WriteLine("Success");
+    Console.WriteLine("Response: {0}", reply.Status.ToString());
+    Console.WriteLine("Roundtrip: {0}", reply.RoundtripTime);
 }
